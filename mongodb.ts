@@ -1,49 +1,52 @@
 import { MongoClient } from "./deps.ts";
-import { config } from "./types.ts";
+import { IDbConfig } from "./types.ts";
 
-const connectMongoDB = <DataSchema>(dbConfig: config) => {
+const connectMongoDB = <DataSchema>(dbConfig: IDbConfig) => {
   const client = new MongoClient();
   client.connectWithUri(dbConfig.MONGO_URL);
   const db = client.database(dbConfig.DATABASE);
   return db.collection<DataSchema>(dbConfig.COLLECTION_NAME);
 };
 
-const insertOne = async <DataSchema>(dbConfig: config, data: any) => {
-  const collection = connectMongoDB<DataSchema>(dbConfig);
+const insertOne = async <DataSchema>(dbConfig: IDbConfig, data: any) => {
+  const client = new MongoClient();
+  client.connectWithUri(dbConfig.MONGO_URL);
+  const db = client.database(dbConfig.DATABASE);
+  const collection = db.collection<DataSchema>(dbConfig.COLLECTION_NAME);
   return await collection.insertOne(data);
 };
 
-const insertMany = async <DataSchema>(dbConfig: config, data: any[]) => {
+const insertMany = async <DataSchema>(dbConfig: IDbConfig, data: any[]) => {
   const collection = connectMongoDB<DataSchema>(dbConfig);
   return await collection.insertMany(data);
 };
 
-const findOne = async <DataSchema>(dbConfig: config, filter?: object) => {
+const findOne = async <DataSchema>(dbConfig: IDbConfig, filter?: object) => {
   const collection = connectMongoDB<DataSchema>(dbConfig);
   return await collection.findOne(filter);
 };
 
-const find = async <DataSchema>(dbConfig: config, filter?: object) => {
+const find = async <DataSchema>(dbConfig: IDbConfig, filter?: object) => {
   const collection = connectMongoDB<DataSchema>(dbConfig);
   return await collection.find(filter);
 };
 
-const updateOne = async <DataSchema>(dbConfig: config, filter: object, data: object) => {
+const updateOne = async <DataSchema>(dbConfig: IDbConfig, filter: object, data: object) => {
   const collection = connectMongoDB<DataSchema>(dbConfig);
   return await collection.updateOne(filter, data);
 };
 
-const updateMany = async <DataSchema>(dbConfig: config, filter: object, data: object) => {
+const updateMany = async <DataSchema>(dbConfig: IDbConfig, filter: object, data: object) => {
   const collection = connectMongoDB<DataSchema>(dbConfig);
   return await collection.updateMany(filter, data);
 };
 
-const deleteOne = async <DataSchema>(dbConfig: config, filter: object) => {
+const deleteOne = async <DataSchema>(dbConfig: IDbConfig, filter: object) => {
   const collection = connectMongoDB<DataSchema>(dbConfig);
   return await collection.deleteOne(filter);
 };
 
-const deleteMany = async <DataSchema>(dbConfig: config, filter: object) => {
+const deleteMany = async <DataSchema>(dbConfig: IDbConfig, filter: object) => {
   const collection = connectMongoDB<DataSchema>(dbConfig);
   return await collection.deleteMany(filter);
 };

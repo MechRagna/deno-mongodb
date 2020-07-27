@@ -1,4 +1,4 @@
-export { config } from "./types.ts";
+export { IDbConfig } from "./types.ts";
 export {
   connectMongoDB,
   insertOne,
