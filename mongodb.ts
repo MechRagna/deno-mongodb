@@ -9,11 +9,15 @@ const connectMongoDB = <DataSchema>(dbConfig: IDbConfig) => {
 };
 
 const insertOne = async <DataSchema>(dbConfig: IDbConfig, data: any) => {
-  const client = new MongoClient();
-  client.connectWithUri(dbConfig.MONGO_URL);
-  const db = client.database(dbConfig.DATABASE);
-  const collection = db.collection<DataSchema>(dbConfig.COLLECTION_NAME);
-  return await collection.insertOne(data);
+  try {
+    const client = new MongoClient();
+    client.connectWithUri(dbConfig.MONGO_URL);
+    const db = client.database(dbConfig.DATABASE);
+    const collection = db.collection<DataSchema>(dbConfig.COLLECTION_NAME);
+    return await collection.insertOne(data);
+  } catch (error) {
+    throw error;
+  }
 };
 
 const insertMany = async <DataSchema>(dbConfig: IDbConfig, data: any[]) => {
