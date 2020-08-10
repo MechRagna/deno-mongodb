@@ -1,0 +1,23 @@
+{
+  "headers": {
+    "cf-cache-status": "HIT",
+    "cf-request-id": "047b308695000012a3cab0d200000001",
+    "expect-ct": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"",
+    "last-modified": "Wed, 29 Jul 2020 20:39:59 GMT",
+    "access-control-allow-origin": "*",
+    "cf-ray": "5c0bb6b75af212a3-MIA",
+    "set-cookie": "__cfduid=d87bc2f163526ae228a83b9c83cf2204c1597083446; expires=Wed, 09-Sep-20 18:17:26 GMT; path=/; domain=.deno.land; HttpOnly; SameSite=Lax; Secure",
+    "content-length": "671",
+    "server": "cloudflare",
+    "content-type": "application/typescript; charset=utf-8",
+    "date": "Mon, 10 Aug 2020 18:17:26 GMT",
+    "x-amz-id-2": "lQonLNNc1xyqGe+SHj0JJV2V4d4jPG0m4FhYp3asUVZvvC/1nhKztXWRgfYPMqEAhnO3qFcmAks=",
+    "vary": "Accept-Encoding",
+    "cache-control": "public, max-age=31536000, immutable",
+    "accept-ranges": "bytes",
+    "age": "349",
+    "x-amz-request-id": "C145B67B0E936E27",
+    "etag": "\"9cd7d059e2a1b1a71543bb5f2b23434b\""
+  },
+  "url": "https://deno.land/x/mongo@v0.9.1/ts/database.ts"
+}

@@ -1,0 +1,29 @@
+{
+  "headers": {
+    "content-disposition": "inline",
+    "referrer-policy": "strict-origin-when-cross-origin,strict-origin-when-cross-origin",
+    "x-ua-compatible": "IE=edge",
+    "strict-transport-security": "max-age=31536000",
+    "x-runtime": "0.057942",
+    "etag": "W/\"bfe017341567efc4981df75a7c628cd5\"",
+    "date": "Mon, 10 Aug 2020 18:17:27 GMT",
+    "gitlab-sv": "web-09-sv-gprd",
+    "cf-cache-status": "REVALIDATED",
+    "x-frame-options": "DENY",
+    "cf-ray": "5c0bb6b69e12d2cc-EZE",
+    "cache-control": "max-age=60, public",
+    "x-permitted-cross-domain-policies": "none",
+    "set-cookie": "__cfduid=df064e1d4c1dff10426131b55a08e77321597083446; expires=Wed, 09-Sep-20 18:17:26 GMT; path=/; domain=.gitlab.com; HttpOnly; SameSite=Lax; Secure",
+    "x-xss-protection": "1; mode=block",
+    "expect-ct": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"",
+    "content-type": "text/plain; charset=utf-8",
+    "x-content-type-options": "nosniff",
+    "x-download-options": "noopen",
+    "x-request-id": "5wDIpO43IA4",
+    "vary": "Accept-Encoding",
+    "gitlab-lb": "fe-03-lb-gprd",
+    "server": "cloudflare",
+    "cf-request-id": "047b30861d0000d2cc4b964200000001"
+  },
+  "url": "https://gitlab.com/common-utilities-deno/responses/-/raw/master/ownError.ts"
+}

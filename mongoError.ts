@@ -1,13 +1,6 @@
-interface errorResp {
-  code: string | number;
-  message: string;
-  stack: any;
-  isOwnError: boolean;
-  originCode: string | number;
-  source: string;
-}
+import { IOwnError } from "./deps.ts";
 
-const mongoError = (error: any): errorResp => {
+const mongoError = (error: any): IOwnError => {
   const codeI: number = error.message.search("code:");
   const codeNum: string = error.message.substr(codeI + 5, 5);
   return {

@@ -1,0 +1,23 @@
+{
+  "headers": {
+    "access-control-allow-origin": "*",
+    "cf-cache-status": "HIT",
+    "content-type": "application/typescript; charset=utf-8",
+    "last-modified": "Wed, 29 Jul 2020 21:10:33 GMT",
+    "x-amz-id-2": "0ayDIE+L6XkikiZBFydF+M5vx9F7/m7Z2bk67zqXPOLJoWTbxsGBxDHbaUEsjpujiHCHGtIYk/s=",
+    "cf-request-id": "047b308da9000012a3cabbd200000001",
+    "etag": "\"f8eb24bfd0037878a2233988791c370f\"",
+    "accept-ranges": "bytes",
+    "cache-control": "public, max-age=31536000, immutable",
+    "set-cookie": "__cfduid=d64b48a405937599fa9683059ac5326fd1597083448; expires=Wed, 09-Sep-20 18:17:28 GMT; path=/; domain=.deno.land; HttpOnly; SameSite=Lax; Secure",
+    "cf-ray": "5c0bb6c2af9d12a3-MIA",
+    "date": "Mon, 10 Aug 2020 18:17:28 GMT",
+    "content-length": "7673",
+    "age": "597481",
+    "vary": "Accept-Encoding",
+    "server": "cloudflare",
+    "expect-ct": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"",
+    "x-amz-request-id": "F9F075580BAF093C"
+  },
+  "url": "https://deno.land/std@0.61.0/path/_globrex.ts"
+}

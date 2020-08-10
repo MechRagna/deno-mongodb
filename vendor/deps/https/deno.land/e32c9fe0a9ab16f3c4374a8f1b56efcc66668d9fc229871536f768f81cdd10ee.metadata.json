@@ -1,0 +1,14 @@
+{
+  "headers": {
+    "expect-ct": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"",
+    "set-cookie": "__cfduid=df61111e3145c1bcaf9b10cc852828d6a1597083447; expires=Wed, 09-Sep-20 18:17:27 GMT; path=/; domain=.deno.land; HttpOnly; SameSite=Lax; Secure",
+    "date": "Mon, 10 Aug 2020 18:17:27 GMT",
+    "vary": "Accept-Encoding",
+    "cf-request-id": "047b3089e8000012a3cab5a200000001",
+    "cf-ray": "5c0bb6bca8d212a3-MIA",
+    "content-length": "0",
+    "server": "cloudflare",
+    "location": "/std@0.61.0/path/mod.ts"
+  },
+  "url": "https://deno.land/std@v0.61.0/path/mod.ts"
+}

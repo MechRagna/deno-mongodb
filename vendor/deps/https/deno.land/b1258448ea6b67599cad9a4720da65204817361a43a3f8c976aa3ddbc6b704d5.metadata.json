@@ -1,0 +1,23 @@
+{
+  "headers": {
+    "content-type": "application/typescript; charset=utf-8",
+    "vary": "Accept-Encoding",
+    "cache-control": "public, max-age=31536000, immutable",
+    "accept-ranges": "bytes",
+    "expect-ct": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"",
+    "etag": "\"45574f11b168d53f97f28dcee751bf1a\"",
+    "date": "Mon, 10 Aug 2020 18:17:27 GMT",
+    "last-modified": "Wed, 29 Jul 2020 20:43:34 GMT",
+    "cf-ray": "5c0bb6bb9e6012a3-MIA",
+    "age": "349",
+    "server": "cloudflare",
+    "access-control-allow-origin": "*",
+    "cf-cache-status": "HIT",
+    "cf-request-id": "047b30893b000012a3cab4b200000001",
+    "x-amz-request-id": "8E0B5D767351D428",
+    "content-length": "268",
+    "set-cookie": "__cfduid=df61111e3145c1bcaf9b10cc852828d6a1597083447; expires=Wed, 09-Sep-20 18:17:27 GMT; path=/; domain=.deno.land; HttpOnly; SameSite=Lax; Secure",
+    "x-amz-id-2": "qSDfoK9Cmp1w5f8XpsGuY6UV1QsM1JDbgRgFWPv7GES7tjwXLaCuWNstKmScF9Nhd9fwIg7fAPM="
+  },
+  "url": "https://deno.land/x/plugin_prepare@v0.7.0/deps.ts"
+}
