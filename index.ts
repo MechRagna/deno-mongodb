@@ -1,6 +1,6 @@
 import { connectMongoDB, insertOne } from "./mongodb.ts";
 import { IDbConfig } from "./types.ts";
-import { mongoError } from "./MongoError.ts";
+import { mongoError } from "./mongoError.ts";
 
 // const config: IDbConfig = {
 //   MONGO_URL:

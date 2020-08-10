@@ -1,1 +1,1 @@
-export { MongoClient } from "https://deno.land/x/mongo/mod.ts";
+export { MongoClient } from "https://deno.land/x/mongo@v0.9.1/mod.ts";
